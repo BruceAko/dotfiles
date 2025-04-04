@@ -1,10 +1,6 @@
 [user]
-  name = Paul Miller
-  email = paul@paulmillr.com
-[commit]
-  gpgsign = true
-[tag]
-	gpgSign = true
+  name = BruceAko
+  email = chongzhi@hust.edu.cn
 [alias]
   ch = checkout
   d = diff
