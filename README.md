@@ -17,7 +17,7 @@ There are tons of useful things in here:
 - Git config, global `.gitignore` file and aliases.
 - Dotfiles synchronization (`sync.py`) with backup.
 - Restoring old dotfiles (`restore.py`) from backup.
-- A lot of [useful bins](https://github.com/denysdovhan/dotfiles/tree/master/bin).
+- A lot of [useful bins](https://github.com/BruceAko/dotfiles/tree/master/bin).
 - `update` script for updating dotfiles, brew, etc.
 
 Missing feature? 🍴 Fork this repo and make it better!
@@ -37,7 +37,7 @@ Clone dotfiles repo:
 
 ```sh
 # Clone dotfiles repo
-git clone https://github.com/denysdovhan/dotfiles.git $HOME/.dotfiles
+git clone https://github.com/BruceAko/dotfiles.git $HOME/.dotfiles
 
 # Go to the dotfiles directory
 cd $HOME/.dotfiles
