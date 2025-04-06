@@ -21,7 +21,6 @@ alias q="~ && clear"
 [ -d ~/Desktop ]              && alias dt='cd ~/Desktop'
 [ -d ~/Projects ]             && alias pj='cd ~/Projects'
 [ -d ~/Projects/Forks ]       && alias pjf='cd ~/Projects/Forks'
-[ -d ~/Projects/Job ]         && alias pjj='cd ~/Projects/Job'
 [ -d ~/Projects/Playground ]  && alias pjl='cd ~/Projects/Playground'
 [ -d ~/Projects/Repos ]       && alias pjr='cd ~/Projects/Repos'
 
@@ -58,11 +57,6 @@ alias getpage='wget --no-clobber --page-requisites --html-extension --convert-li
 # Download file with original filename
 alias get="curl -O -L"
 
-# Yarn
-alias ybw="yarn build:watch"
-alias yba="yarn build:all"
-alias ytw="yarn test:watch"
-
 # Use tldr as help util
 if _exists tldr; then
   alias help="tldr"
@@ -70,13 +64,6 @@ fi
 
 alias git-root='cd $(git rev-parse --show-toplevel)'
 alias cdgr='git-root'
-
-# Avoid stupidity with trash-cli:
-# https://github.com/sindresorhus/trash-cli
-# or use default rm -i
-if _exists trash; then
-  alias rm='trash'
-fi
 
 # Better ls with icons, tree view and more
 # https://github.com/eza-community/eza

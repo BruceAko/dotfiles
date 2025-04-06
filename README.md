@@ -18,7 +18,7 @@ There are tons of useful things in here:
 - Dotfiles synchronization (`sync.py`) with backup.
 - Restoring old dotfiles (`restore.py`) from backup.
 - A lot of [useful bins](https://github.com/denysdovhan/dotfiles/tree/master/bin).
-- `update` script for updating dotfiles, npm, brew, gems, etc.
+- `update` script for updating dotfiles, brew, etc.
 
 Missing feature? 🍴 Fork this repo and make it better!
 
@@ -54,7 +54,7 @@ Use single command to get latest updates:
 update
 ```
 
-This command will update dotfiles, their dependencies, `brew` or `apt-get` packages, global `npm` dependencies, `gem`s, `apm` plugins.
+This command will update dotfiles, their dependencies, `brew` or `apt-get` packages.
 
 ## Under the hood
 
@@ -67,7 +67,6 @@ I suggest you to organize project folder as follows:
 ```
 ~/Projects
 ├── Forks       # for GitHub fork
-├── Job         # for job projects
 ├── Playground  # for short-term experiments
 └── Repos       # for long-term projects
 ```
@@ -88,9 +87,9 @@ Aliases are gonna make your work fast and enjoyable. See code in `$DOTFILES/lib/
   - **`dl`** → `cd ~/Downloads`
   - **`dt`** → `cd ~/Desktop`
   - **`pj`** → `cd ~/Projects`
-  - **`pjr`** → `cd ~/Projects/_Repos`
-  - **`pjf`** → `cd ~/Projects/_Forks`
-  - **`pl`** → `cd ~/Projects/_Playground/`
+  - **`pjr`** → `cd ~/Projects/Repos`
+  - **`pjf`** → `cd ~/Projects/Forks`
+  - **`pjl`** → `cd ~/Projects/Playground/`
 - Commands Shortcuts
   - **`e`** → `$EDITOR`
   - **`+x`** → `chmod +x`
@@ -116,9 +115,6 @@ Aliases are gonna make your work fast and enjoyable. See code in `$DOTFILES/lib/
 These OMZ plugins are included:
 
 - [`git`](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/git) — git aliases and functions.
-- [`npm`](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/npm) — provides completion as well as adding many useful aliases.
-- [`yarn`](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/yarn) — the same as for `npm`, but for `yarn`
-- [`nvm`](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/nvm) — auto-sourcing `nvm`.
 - [`sudo`](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/sudo) — `[Esc] [Esc]` to re-run previous command with sudo.
 - [`ssh-agent`](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/ssh-agent) — automatically starts ssh-agent to set up and load whichever credentials you want for ssh connections.
 - [`gpg-agent`](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/gpg-agent) — enables `gpg-agent` if it is not running.
@@ -133,7 +129,6 @@ Dotfiles also include some functions that will make your life easier. See code i
 - `git-fork` — add remote upsteam.
 - `git-upstream` — sync branch with upstream.
 - `gz` — get gzipped file size
-- `n` — runs given command using binary in `node_modules/.bin` of the current project.
 - `nyan` — print [nyan cat](https://www.youtube.com/watch?v=QH2-TGUlwu4).
 - `server` — start an HTTP server from a directory.
 

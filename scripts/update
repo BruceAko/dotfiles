@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Get System Updates, update NPM packages and dotfiles
+# Get System Updates and dotfiles
 # Source: https://github.com/sapegin/dotfiles/blob/master/setup/update.sh
 
 trap on_error SIGTERM

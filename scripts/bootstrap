@@ -174,28 +174,6 @@ install_software() {
   finish
 }
 
-install_npm() {
-  # Do not instal npm on non-macOS machines
-  if [ "$(uname)" != "Darwin" ]; then
-    return
-  fi
-
-  info "Installing global npm packages..."
-
-  packages=(
-    commitizen
-    npkill
-    fkill-cli
-    cz-conventional-changelog
-  )
-
-  echo "Installing: ${packages[*]}"
-
-  npm install -g "${packages[@]}"
-
-  finish
-}
-
 on_finish() {
   echo
   success "Setup was successfully done!"
@@ -229,7 +207,6 @@ main() {
   install_git "$*"
   install_zsh "$*"
   install_software "$*"
-  install_npm "$*"
   on_finish "$*"
 }
 
