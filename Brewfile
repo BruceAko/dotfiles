@@ -10,7 +10,6 @@ brew "zoxide"
 brew "fzf"
 brew "wget"
 brew "tldr"
-brew "mas"
 brew "terminal-notifier"
 brew "bat"
 
@@ -29,8 +28,3 @@ cask "qlcolorcode" # https://github.com/anthonygelibert/QLColorCode
 cask "qlstephen" # https://github.com/whomwah/qlstephen
 cask "quicklook-json" # https://github.com/sindresorhus/quick-look-plugins
 cask "webpquicklook" # https://github.com/dchest/webp-quicklook
-
-# ------------------------------------------------------------------------------
-# App Store applications
-# ------------------------------------------------------------------------------
-mas "The Unarchiver",  id: 425424353
