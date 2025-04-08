@@ -13,3 +13,6 @@ Thumbs.db
 
 # Ignore VSCode files
 .vscode
+
+# Ignore Cursor files
+.cursorignore
