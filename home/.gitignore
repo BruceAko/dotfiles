@@ -8,14 +8,6 @@ desktop.ini
 # Thumbnail cache files
 Thumbs.db
 
-# Installed NPM modules
-node_modules
-npm-debug.log
-yarn-error.log
-
-# Installed Bower packages
-bower_components
-
 # Editor`s configs
 *.sublime-*
 .tern-project

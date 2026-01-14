@@ -28,16 +28,7 @@ _extend_path() {
 # Add custom bin to $PATH
 _extend_path "$HOME/.local/bin"
 _extend_path "$DOTFILES/bin"
-_extend_path "$HOME/.npm-global/bin"
 _extend_path "$HOME/.rvm/bin"
-_extend_path "$HOME/.yarn/bin"
-_extend_path "$HOME/.config/yarn/global/node_modules/.bin"
-_extend_path "$HOME/.bun/bin"
-
-# Extend $NODE_PATH
-if [ -d ~/.npm-global ]; then
-  export NODE_PATH="$NODE_PATH:$HOME/.npm-global/lib/node_modules"
-fi
 
 # Default pager
 export PAGER='less'
@@ -77,9 +68,6 @@ export TIMEFMT=$'\n================\nCPU\t%P\nuser\t%*U\nsystem\t%*S\ntotal\t%*E
 # ------------------------------------------------------------------------------
 export ZSH_DISABLE_COMPFIX=true
 
-# Autoload node version when changing cwd
-zstyle ':omz:plugins:nvm' autoload true
-
 # Use passphase from macOS keychain
 if [[ "$OSTYPE" == "darwin"* ]]; then
   zstyle :omz:plugins:ssh-agent ssh-add-args --apple-load-keychain
@@ -113,10 +101,6 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/history-substring-search
     zgen oh-my-zsh plugins/sudo
     zgen oh-my-zsh plugins/command-not-found
-    zgen oh-my-zsh plugins/npm
-    zgen oh-my-zsh plugins/yarn
-    zgen oh-my-zsh plugins/nvm
-    zgen oh-my-zsh plugins/fnm
     zgen oh-my-zsh plugins/extract
     zgen oh-my-zsh plugins/ssh-agent
     zgen oh-my-zsh plugins/gpg-agent
@@ -128,9 +112,6 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/direnv
     zgen oh-my-zsh plugins/docker
     zgen oh-my-zsh plugins/docker-compose
-    zgen oh-my-zsh plugins/node
-    zgen oh-my-zsh plugins/deno
-    zgen oh-my-zsh plugins/bun
     zgen oh-my-zsh plugins/tldr
     zgen oh-my-zsh plugins/fzf
 
