@@ -1,8 +1,5 @@
-# Denys Dovhan’s dotfiles
+# BruceAko's dotfiles
 
-<p align="center">
-  <img alt="Spaceship with Hyper and One Dark" src="https://user-images.githubusercontent.com/10276208/36086434-5de52ace-0ff2-11e8-8299-c67f9ab4e9bd.gif" width="980px">
-</p>
 
 There are tons of useful things in here:
 
@@ -15,8 +12,6 @@ There are tons of useful things in here:
 - [zgen](https://github.com/tarjoilija/zgen) for dependency management.
 - Useful [aliases](./lib/aliases.zsh).
 - Git config, global `.gitignore` file and aliases.
-- Dotfiles synchronization (`sync.py`) with backup.
-- Restoring old dotfiles (`restore.py`) from backup.
 - A lot of [useful bins](https://github.com/BruceAko/dotfiles/tree/master/bin).
 - `update` script for updating dotfiles, brew, etc.
 
@@ -88,9 +83,9 @@ Aliases are gonna make your work fast and enjoyable. See code in `$DOTFILES/lib/
   - **`dl`** → `cd ~/Downloads`
   - **`dt`** → `cd ~/Desktop`
   - **`pj`** → `cd ~/Projects`
-  - **`pjr`** → `cd ~/Projects/_Repos`
-  - **`pjf`** → `cd ~/Projects/_Forks`
-  - **`pl`** → `cd ~/Projects/_Playground/`
+  - **`pjr`** → `cd ~/Projects/Repos`
+  - **`pjf`** → `cd ~/Projects/Forks`
+  - **`pl`** → `cd ~/Projects/Playground/`
 - Commands Shortcuts
   - **`e`** → `$EDITOR`
   - **`+x`** → `chmod +x`
@@ -103,7 +98,7 @@ Aliases are gonna make your work fast and enjoyable. See code in `$DOTFILES/lib/
   - **`o <FILE>`** — open file from terminal.
   - **`oo`** — open current folder.
 - Misc
-  - **`update`** — get updates (Runs `$DOTFILES/scripts/update.zsh`).
+  - **`update`** — get updates (Runs `$DOTFILES/scripts/update`).
   - **`dotfiles`** — jump quickly into dotfiles folder.
   - **`myip`** — my local IP address.
   - **`password`** — generate random password, copies it into clipboard and outputs it to terminal.

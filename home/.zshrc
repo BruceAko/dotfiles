@@ -28,7 +28,6 @@ _extend_path() {
 # Add custom bin to $PATH
 _extend_path "$HOME/.local/bin"
 _extend_path "$DOTFILES/bin"
-_extend_path "$HOME/.rvm/bin"
 
 # Default pager
 export PAGER='less'
@@ -119,7 +118,7 @@ if ! zgen saved; then
     if command -v zoxide >/dev/null 2>&1; then
       zgen oh-my-zsh plugins/zoxide
     fi
-
+    
     # Per-directory env vars
     if command -v direnv >/dev/null 2>&1; then
       zgen oh-my-zsh plugins/direnv
