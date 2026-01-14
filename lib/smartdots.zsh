@@ -3,9 +3,9 @@
 # Quick change directories
 # Expands .... -> ../../../
 #
-# Author: Denys Dovhan, denysdovhan.com
+# Author: BruceAko, github.com/BruceAko
 # License: MIT
-# https://github.com/denysdovhan/dotfiles
+# https://github.com/BruceAko/dotfiles
 
 smartdots() {
   if [[ $LBUFFER = *.. ]]; then

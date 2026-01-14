@@ -17,8 +17,8 @@ There are tons of useful things in here:
 - Git config, global `.gitignore` file and aliases.
 - Dotfiles synchronization (`sync.py`) with backup.
 - Restoring old dotfiles (`restore.py`) from backup.
-- A lot of [useful bins](https://github.com/denysdovhan/dotfiles/tree/master/bin).
-- `update` script for updating dotfiles, brew, gems, etc.
+- A lot of [useful bins](https://github.com/BruceAko/dotfiles/tree/master/bin).
+- `update` script for updating dotfiles, brew, etc.
 
 Missing feature? 🍴 Fork this repo and make it better!
 
@@ -37,7 +37,7 @@ Clone dotfiles repo:
 
 ```sh
 # Clone dotfiles repo
-git clone https://github.com/denysdovhan/dotfiles.git $HOME/.dotfiles
+git clone https://github.com/BruceAko/dotfiles.git $HOME/.dotfiles
 
 # Go to the dotfiles directory
 cd $HOME/.dotfiles
@@ -54,7 +54,7 @@ Use single command to get latest updates:
 update
 ```
 
-This command will update dotfiles, their dependencies, `brew` or `apt-get` packages, `gem`s, `apm` plugins.
+This command will update dotfiles, their dependencies, `brew` or `apt-get` packages.
 
 ## Under the hood
 
@@ -192,4 +192,4 @@ Resources that I used to make these dotfiles better:
 
 ## License
 
-MIT © [Denys Dovhan](https://denysdovhan.com)
+MIT © [BruceAko](https://github.com/BruceAko)
