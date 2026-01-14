@@ -8,12 +8,8 @@ desktop.ini
 # Thumbnail cache files
 Thumbs.db
 
-# Editor`s configs
-*.sublime-*
-.tern-project
-
-# Ignore Westorm files
-.idea
+# Ignore VSCode files
+.vscode
 
 # VSCode: Todo extension files
 # https://marketplace.visualstudio.com/items/?itemName=fabiospampinato.vscode-todo-plus

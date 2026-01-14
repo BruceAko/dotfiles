@@ -118,7 +118,7 @@ if ! zgen saved; then
     if command -v zoxide >/dev/null 2>&1; then
       zgen oh-my-zsh plugins/zoxide
     fi
-    
+
     # Per-directory env vars
     if command -v direnv >/dev/null 2>&1; then
       zgen oh-my-zsh plugins/direnv

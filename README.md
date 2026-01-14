@@ -85,7 +85,7 @@ Aliases are gonna make your work fast and enjoyable. See code in `$DOTFILES/lib/
   - **`pj`** → `cd ~/Projects`
   - **`pjr`** → `cd ~/Projects/Repos`
   - **`pjf`** → `cd ~/Projects/Forks`
-  - **`pl`** → `cd ~/Projects/Playground/`
+  - **`pjl`** → `cd ~/Projects/Playground/`
 - Commands Shortcuts
   - **`e`** → `$EDITOR`
   - **`+x`** → `chmod +x`
