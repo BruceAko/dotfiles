@@ -57,7 +57,6 @@ cask "multipass"
 cask "iterm2"
 cask "visual-studio-code"
 cask "github"
-cask "ghostty"
 
 # Desktop applications
 cask "telegram"
