@@ -17,7 +17,6 @@ brew "gh"
 brew "terminal-notifier"
 brew "wifi-password"
 brew "bat"
-brew "codex"
 brew "gemini-cli"
 
 # ------------------------------------------------------------------------------
@@ -32,8 +31,3 @@ cask "mos"
 
 # Development
 cask "iterm2"
-
-# ------------------------------------------------------------------------------
-# App Store applications
-# ------------------------------------------------------------------------------
-mas "The Unarchiver",  id: 425424353
