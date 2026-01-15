@@ -18,6 +18,7 @@ brew "terminal-notifier"
 brew "wifi-password"
 brew "bat"
 brew "gemini-cli"
+brew "direnv"
 
 # ------------------------------------------------------------------------------
 # Cask
