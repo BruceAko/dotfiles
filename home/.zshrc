@@ -134,7 +134,7 @@ if ! zgen saved; then
 
     # Files
     zgen load $DOTFILES/lib
-    zgen load $DOTFILES/custom
+    #zgen load $DOTFILES/custom
 
     # Load Spaceship prompt from remote
     if [[ ! -d "$SPACESHIP_PROJECT" ]]; then
