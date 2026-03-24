@@ -137,3 +137,5 @@
 #   email = your@email.com
 [include]
   path = ~/.gitlocal
+[credential]
+  helper = store
