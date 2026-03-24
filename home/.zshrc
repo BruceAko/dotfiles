@@ -26,8 +26,8 @@ _extend_path() {
 }
 
 # Add custom bin to $PATH
-_extend_path "$HOME/.local/bin"
-_extend_path "$DOTFILES/bin"
+_extend_path "$HOME/.local/bin" # local bins
+_extend_path "$DOTFILES/bin" # custom scripts
 
 # Default pager
 export PAGER='less'
@@ -99,11 +99,12 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/history-substring-search
     zgen oh-my-zsh plugins/sudo
     zgen oh-my-zsh plugins/command-not-found
+    zgen oh-my-zsh plugins/pyenv
     zgen oh-my-zsh plugins/extract
     zgen oh-my-zsh plugins/ssh-agent
     zgen oh-my-zsh plugins/gpg-agent
     zgen oh-my-zsh plugins/macos
-    zgen oh-my-zsh plugins/bgnotify
+    # zgen oh-my-zsh plugins/bgnotify # TODO: Testing Ghostty notify
     zgen oh-my-zsh plugins/vscode
     zgen oh-my-zsh plugins/gh
     zgen oh-my-zsh plugins/common-aliases
@@ -161,6 +162,10 @@ if _exists codex; then
   eval "$(codex completion zsh)"
 fi
 
+if [[ -f "$HOME/.bazelenv" ]]; then
+  source "$HOME/.bazelenv"
+fi
+
 # ------------------------------------------------------------------------------
 # Overrides
 # ------------------------------------------------------------------------------
@@ -171,4 +176,3 @@ if [[ -f "$HOME/.zshlocal" ]]; then
 fi
 
 # ------------------------------------------------------------------------------
-
