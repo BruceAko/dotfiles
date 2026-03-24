@@ -62,8 +62,9 @@ update_dotfiles() {
   cd - > /dev/null 2>&1 || exit
 
   info "Updating Zsh plugins..."
-  zgen selfupdate
-  zgen update
+  if [ -f "${HOME}/.zgen/zgen.zsh" ] && _exists zsh; then
+    zsh -c "source ${HOME}/.zgen/zgen.zsh && zgen selfupdate && zgen update"
+  fi
 
   finish
 }
